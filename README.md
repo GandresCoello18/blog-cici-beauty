@@ -1,8 +1,80 @@
-# Boilerplate and Starter for Next JS 10+, Tailwind CSS 2.0 and TypeScript
+# Notice - Blog SSR Cici beauty place
 
-<p align="center">
-  <a href="https://creativedesignsguru.com/demo/Nextjs-Boilerplate/"><img src="public/assets/images/nextjs-starter-banner.png?raw=true" alt="Next js starter banner"></a>
-</p>
+A boilerplate of Server Side Rendering with Next.js
+
+[![CircleCI](https://circleci.com/gh/locol23/next-redux-typescript-starter/tree/master.svg?style=svg)](https://circleci.com/gh/locol23/next-redux-typescript-starter/tree/master)
+[![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
+
+# Libraries
+
+- now
+- React
+- Redux
+- Next
+- emotion
+- Jest
+- TypeScript
+
+# Setup
+
+```
+git clone https://github.com/locol23/next-redux-typescript-starter.git
+cd next-redux-typescript-starter
+yarn
+```
+
+# Development
+
+```
+yarn dev
+```
+
+## Comenzando 🚀
+
+_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
+
+Mira **Deployment** para conocer como desplegar el proyecto.
+
+### Pre-requisitos 📋
+
+_Que cosas necesitas para instalar el software y como instalarlas_
+
+_Tener instalado Node Js en tu ordenador, puedes obtener desde el sitio oficial para diferentes SOS._
+
+- [Node js](https://nodejs.org/es/) - Entorno de ejecucion javascript
+
+## Construido con 🛠️
+
+_Para el desarrollo de esta api rest se utilizo las siguientes herramientas._
+
+- [React](https://es.reactjs.org/) - Libreria de interzas ded usuario reactivo.
+- [Redux](https://es.redux.js.org/) - Para manejar el estado de la aplicacion de forma global.
+- [Next](https://nextjs.org/) - Framework de SERVER SIDE RENDER para react
+- [React-icons](https://react-icons.github.io/react-icons/icons?name=md) - Icons de varias librerias.
+- [Vercel](https://vercel.com/) - Plataforma para deploy y test A - B.
+- [Axios](https://github.com/axios/axios) - Fetch de datos.
+- [TypeScript](https://www.typescriptlang.org/) - Tipado fuerte para javascript.
+- [React-hook-form](https://react-hook-form.com) - Manejo de formularios html plano o UI de frameworok.
+- [Firebase](https://firebase.google.com/?hl=es) - Auth para facebbok y google.
+
+## Autores ✒️
+
+- **Andrés Coello** - _Developer full stack_ - [Andres Coello](https://www.instagram.com/coellogoyes/)
+
+## Licencia 📄
+
+Este proyecto está bajo la Licencia (MIT)
+
+## Expresiones de Gratitud 🎁
+
+- Pasate por mi perfil para ver algun otro proyecto 📢
+- Desarrollemos alguna app juntos, puedes escribirme en mis redes.
+- Muchas gracias por pasarte por este proyecto 🤓.
+
+---
+
+⌨️ con ❤️ por [Andres Coello](https://www.instagram.com/coellogoyes/) 😊
+
 
 🚀 Boilerplate and Starter for Next.js, Tailwind CSS and TypeScript ⚡️ Made with developer experience first: [Next.js](https://nextjs.org), [TypeScript](https://www.typescriptlang.org), [ESLint](https://eslint.org), [Prettier](https://prettier.io), [PostCSS](https://postcss.org), [Tailwind CSS](https://tailwindcss.com).
 
@@ -28,97 +100,3 @@ Built-in feature from Next.js:
 - ☕ Minify HTML & CSS
 - 💨 Live reload
 - ✅ Cache busting
-
-### Philosophy
-
-- Minimal code
-- SEO-friendly
-- 🚀 Production-ready
-
-### Premium Themes ([Nextjs Themes](https://creativedesignsguru.com/category/nextjs/))
-
-| [Green Nextjs Landing Page Template](https://creativedesignsguru.com/landing-green-modern-nextjs-theme/) | [Indigo Nextjs Tailwind Theme](https://creativedesignsguru.com/landing-indigo-modern-react-theme/) |
-| --- | --- |
-| [![Green Nextjs Landing Page Template](https://creativedesignsguru.com/assets/images/themes/landing-green-modern-nextjs-theme-xs.png)](https://creativedesignsguru.com/landing-green-modern-nextjs-theme/) | [![Indigo Nextjs Tailwind Theme](https://creativedesignsguru.com/assets/images/themes/landing-indigo-modern-nextjs-theme-xs.png)](https://creativedesignsguru.com/landing-indigo-modern-react-theme/) |
-
-| [Purple Saas Nextjs Theme](https://creativedesignsguru.com/landing-purple-modern-react-theme/) | [Blue Landing Page Nextjs Theme](https://creativedesignsguru.com/landing-blue-modern-react-theme/) |
-| --- | --- |
-| [![Purple Saas Nextjs Theme](https://creativedesignsguru.com/assets/images/themes/landing-purple-modern-nextjs-theme-xs.png)](https://creativedesignsguru.com/landing-purple-modern-react-theme/) | [![Blue Landing Page Nextjs Theme](https://creativedesignsguru.com/assets/images/themes/landing-blue-modern-nextjs-theme-xs.png)](https://creativedesignsguru.com/landing-blue-modern-react-theme/) |
-
-### Requirements
-
-- Node.js and npm
-
-### Getting started
-
-Run the following command on your local environment:
-
-```
-git clone --depth=1 https://github.com/ixartz/Next-js-Boilerplate.git my-project-name
-cd my-project-name
-npm install
-```
-
-Then, you can run locally in development mode with live reload:
-
-```
-npm run dev
-```
-
-Open http://localhost:8080 with your favorite browser to see your project.
-
-```
-.
-├── public        # Static files
-└── src
-    ├── pages     # Next.js pages
-    └── styles    # CSS files
-```
-
-### Customization
-
-You can easily configure Next js Boilerplate. Please change the following file:
-
-- `public/apple-touch-icon.png`, `public/favicon.ico`, `public/favicon-16x16.png` and `public/favicon-32x32.png`: your blog favicon, you can generate from https://favicon.io/favicon-converter/
-- `src/styles/main.css`: your blog CSS file using Tailwind CSS
-
-### Deploy to production
-
-You can see the results locally in production mode with:
-
-```
-$ npm run build
-$ npm run start
-```
-
-The generated HTML and CSS files are minified (built-in feature from Next js). It will also removed unused CSS from [Tailwind CSS](https://tailwindcss.com).
-
-You can create an optimized production build with:
-
-```
-npm run build-prod
-```
-
-Now, your blog is ready to be deployed. All generated files are located at `dist` folder, which you can deploy with any hosting service.
-
-### Deploy to Netlify
-
-Clone this repository on own GitHub account and deploy to Netlify:
-
-[![Netlify Deploy button](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/ixartz/Next-js-Boilerplate)
-
-### Contributions
-
-Everyone is welcome to contribute to this project. Feel free to open an issue if you have question or found a bug.
-
-### License
-
-Licensed under the MIT License, Copyright © 2020
-
-See [LICENSE](LICENSE) for more information.
-
----
-
-Made with ♥ by [CreativeDesignsGuru](https://creativedesignsguru.com)
-
-[![Sponsor Next JS Boilerplate](https://cdn.buymeacoffee.com/buttons/default-red.png)](https://www.buymeacoffee.com/ixartz)
