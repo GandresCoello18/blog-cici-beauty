@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Link from 'next/link';
+
 import { CardBlog } from '../components/card/CardBlog';
 import { CardVideo } from '../components/card/CardVideo';
 import { Main } from '../templates/Main';
@@ -11,11 +13,21 @@ const Index = () => (
         <CardVideo key={item} />
       ))}
     </div>
+    <div className="container text-center md:text-right">
+      <Link href="/talleres">
+        <a href="/talleres">Ver más talleres</a>
+      </Link>
+    </div>
 
     <div className="container m-auto grid sm:grid-cols-1 xl:grid-cols-3 pt-6 gap-8 mt-7 p-3">
       {[1, 2, 3].map((item) => (
         <CardBlog key={item} />
       ))}
+    </div>
+    <div className="container text-center md:text-right">
+      <Link href="/blog">
+        <a href="/blog">Ver más post</a>
+      </Link>
     </div>
 
     <div className="w-full m-auto bg-cici-100 grid grid-cols-1 md:grid-cols-2 pt-6 gap-8 mt-7 p-4">

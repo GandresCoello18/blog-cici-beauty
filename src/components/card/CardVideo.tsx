@@ -1,6 +1,16 @@
 /* eslint-disable jsx-a11y/media-has-caption */
 import React from 'react';
 
+const styles: any = {
+  capaVideo: {
+    backgroundColor: 'rgba(0,0,0,0.5)',
+    width: '100%',
+    height: '100%',
+    top: -190,
+    position: 'relative',
+  },
+};
+
 export const CardVideo = () => (
   <div className="m-auto">
     <div className="p-2 mb-5 grid grid-cols grid-rows grid-flow-row overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out">
@@ -9,6 +19,7 @@ export const CardVideo = () => (
           <video autoPlay loop muted className="rounded-t-xl object-cover h-48 w-full">
             <source src="/images/localstorage.mp4" type="video/mp4" />
           </video>
+          <div style={styles.capaVideo} />
         </a>
       </div>
 
