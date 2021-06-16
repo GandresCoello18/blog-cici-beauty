@@ -1,19 +1,33 @@
 import React from 'react';
 
+import { HeaderBlog } from '../components/blog/headerBlog';
+import { CardBlog } from '../components/card/CardBlog';
+import { Pagination } from '../components/elements/pagination';
 import { Main } from '../templates/Main';
 
 const Blog = () => (
   <Main>
-    <div className="overflow-hidden">
-      <img
-        className="object-cover h-full md:h-80 w-full"
-        src="https://static.platzi.com/media/blog/platzicares-cover-22001b46-2a2a-4a6d-a82d-41f63539b535.png"
-        alt="beauty"
-      />
-      <div className="bg-gray-600 bg-opacity-50 w-full h-full relative" style={{ top: 110 }}>
-        rfgvregfrgvf
+    <HeaderBlog />
+    <section className="sm:flex justify-around p-4">
+      <h3 className="font-bold" style={{ fontSize: 23 }}>
+        Posts
+      </h3>
+      <div className="mt-4 sm:mt-0">
+        <input
+          className="shadow appearance-none border-pink-300 border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          type="text"
+          placeholder="Buscar"
+        />
       </div>
+    </section>
+
+    <div className="container m-auto grid sm:grid-cols-1 xl:grid-cols-3 pt-6 gap-8 mt-7 p-3">
+      {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((item) => (
+        <CardBlog key={item} />
+      ))}
     </div>
+
+    <Pagination />
   </Main>
 );
 

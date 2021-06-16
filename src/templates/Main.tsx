@@ -11,7 +11,7 @@ interface IMainProps {
 export const Main = ({ children }: IMainProps) => (
   <div className="antialiased w-full text-gray-700">
     <NavBar />
-    {children}
+    <div className="bg-gray-50">{children}</div>
     <Footer />
   </div>
 );

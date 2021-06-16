@@ -7,6 +7,7 @@
     "start": "next start",
     "build-stats": "ANALYZE=true npm run build",
     "export": "next export -o dist",
+    "format": "prettier --write \"src/**/*.tsx\" \"src/**/*ts\" --write \"package.json\"",
     "build-prod": "run-s clean build export",
     "clean": "rimraf .next dist",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx ."
