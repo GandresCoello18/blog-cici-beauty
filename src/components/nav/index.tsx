@@ -36,7 +36,7 @@ export const NavBar = () => {
       setNavigation(navigation);
     }
 
-    if (pathname === '/talleres') {
+    if (pathname.includes('/talleres')) {
       navigation[2].current = true;
       setNavigation(navigation);
     }
