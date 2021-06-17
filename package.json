@@ -20,6 +20,8 @@
     "next-seo": "^4.24.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-hover-video-player": "^8.1.2",
+    "react-multi-carousel": "^2.6.3",
     "styled-jsx-plugin-postcss": "^4.0.1",
     "video.js": "^7.12.3",
     "videojs-react-enhanced": "^0.3.1"

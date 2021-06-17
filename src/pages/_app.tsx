@@ -5,6 +5,7 @@ import { AppProps } from 'next/app';
 import Head from 'next/head';
 
 import '../styles/main.css';
+import 'react-multi-carousel/lib/styles.css';
 import 'video.js/dist/video-js.css';
 
 // eslint-disable-next-line react/jsx-props-no-spreading

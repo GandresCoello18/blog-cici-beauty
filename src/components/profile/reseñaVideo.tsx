@@ -13,12 +13,5 @@ export const ResenaVIdeo = () => (
       <div className="font-semibold text-gray-700">Antério Vieira da Silva Lima</div>
       <div className="text-sm text-gray-500">You: Thanks, sounds good! . 8hr</div>
     </div>
-    <div className="p-2">
-      <img
-        src="https://images.unsplash.com/photo-1549078642-b2ba4bda0cdb?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=3&amp;w=144&amp;h=144"
-        alt="My profile"
-        className="w-4 h-4 rounded-full order-1"
-      />
-    </div>
   </div>
 );
