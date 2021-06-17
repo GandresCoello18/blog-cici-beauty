@@ -2,11 +2,17 @@
 import React from 'react';
 
 import { Video } from '../video';
+import { VideoHoverPreview } from '../video/videoHoverPreview';
 
-export const CardVideoHorizontal = () => (
+interface Props {
+  preview?: boolean;
+  muted?: boolean;
+}
+
+export const CardVideoHorizontal = ({ muted, preview }: Props) => (
   <div className="bg-white p-2 w-80 max-w-3xl sm:w-full sm:p-4 h-auto sm:h-64 rounded-2xl shadow-lg flex flex-col sm:flex-row gap-5 select-none">
     <div className="w-full md:w-56 m-auto">
-      <Video />
+      {preview ? <VideoHoverPreview /> : <Video muted={muted} />}
     </div>
     <div className="flex sm:flex-1 flex-col gap-2 p-1">
       <h1 className="text-lg sm:text-xl font-semibold  text-gray-600">

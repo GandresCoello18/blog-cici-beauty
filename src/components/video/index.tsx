@@ -4,10 +4,16 @@ import React from 'react';
 import videojs from 'video.js';
 import VREPlayer from 'videojs-react-enhanced';
 
-export const Video = () => {
+interface Props {
+  muted?: boolean | undefined;
+}
+
+export const Video = ({ muted }: Props) => {
   const playerOptions: VREPlayer.IPlayerOptions = {
     src: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
     controls: true,
+    autoplay: 'muted',
+    muted: muted || false,
   };
 
   const videojsOptions: VREPlayer.IVideoJsOptions = {
