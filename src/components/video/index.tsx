@@ -1,7 +1,8 @@
+/* eslint-disable no-console */
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import React from 'react';
 
-import videojs from 'video.js';
+import 'video.js';
 import VREPlayer from 'videojs-react-enhanced';
 
 interface Props {
@@ -31,9 +32,9 @@ export const Video = ({ muted }: Props) => {
       playerOptions={playerOptions}
       videojsOptions={videojsOptions}
       onReady={(player) => console.log(player)}
-      onPlay={(e, _, second) => console.log('Play!')}
-      onPause={(e, _, second) => console.log('Pause!')}
-      onEnded={(e, _) => console.log('Ended!')}
+      onPlay={(_e, _, _second) => console.log('Play!')}
+      onPause={(_e, _, _second) => console.log('Pause!')}
+      onEnded={(_e, _) => console.log('Ended!')}
     />
   );
 };
