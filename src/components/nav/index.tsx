@@ -107,7 +107,7 @@ export const NavBar = () => {
                   <BellIcon className="h-6 w-6" aria-hidden="true" />
                 </button>
 
-                <Menu as="div" className="ml-3 relative">
+                <Menu as="div" className="ml-3 relative z-10">
                   {({ open }: any) => (
                     <>
                       <div>
@@ -136,6 +136,21 @@ export const NavBar = () => {
                         >
                           <Menu.Item>
                             {({ active }: any) => (
+                              <Link href="/profile">
+                                <a
+                                  href="/profile"
+                                  className={classNames(
+                                    active ? 'bg-gray-100' : '',
+                                    'block px-4 py-2 text-sm text-gray-700',
+                                  )}
+                                >
+                                  Mi Perfil
+                                </a>
+                              </Link>
+                            )}
+                          </Menu.Item>
+                          <Menu.Item>
+                            {({ active }: any) => (
                               <a
                                 href="#"
                                 className={classNames(
@@ -143,7 +158,7 @@ export const NavBar = () => {
                                   'block px-4 py-2 text-sm text-gray-700',
                                 )}
                               >
-                                Your Profile
+                                Ajustes
                               </a>
                             )}
                           </Menu.Item>
@@ -156,20 +171,7 @@ export const NavBar = () => {
                                   'block px-4 py-2 text-sm text-gray-700',
                                 )}
                               >
-                                Settings
-                              </a>
-                            )}
-                          </Menu.Item>
-                          <Menu.Item>
-                            {({ active }: any) => (
-                              <a
-                                href="#"
-                                className={classNames(
-                                  active ? 'bg-gray-100' : '',
-                                  'block px-4 py-2 text-sm text-gray-700',
-                                )}
-                              >
-                                Sign out
+                                Salir
                               </a>
                             )}
                           </Menu.Item>
