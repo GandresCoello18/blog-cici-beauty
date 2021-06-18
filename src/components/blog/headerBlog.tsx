@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { ClockIcon, ChatAlt2Icon } from '@heroicons/react/outline';
+import Link from 'next/link';
 
 export const HeaderBlog = () => (
   <section
@@ -18,9 +19,11 @@ export const HeaderBlog = () => (
           style={{ fontSize: '2em' }}
           data-reactid="197"
         >
-          <a href="/blog/virtual-dom/" className="text-white no-underline" data-reactid="198">
-            DOM vs. Virtual DOM | ¿Cuál es la mejor estrategia de render en el navegador?
-          </a>
+          <Link href="/blog/test">
+            <a href="/blog/test/" className="text-white no-underline" data-reactid="198">
+              DOM vs. Virtual DOM | ¿Cuál es la mejor estrategia de render en el navegador?
+            </a>
+          </Link>
         </h1>
         <div className="flex justify-between mt-3" data-reactid="199">
           <div className="flex mt-2" data-reactid="201">

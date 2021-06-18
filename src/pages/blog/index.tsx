@@ -1,9 +1,11 @@
 import React from 'react';
 
-import { HeaderBlog } from '../components/blog/headerBlog';
-import { CardBlog } from '../components/card/CardBlog';
-import { Pagination } from '../components/elements/pagination';
-import { Main } from '../templates/Main';
+import Link from 'next/link';
+
+import { HeaderBlog } from '../../components/blog/headerBlog';
+import { CardBlog } from '../../components/card/CardBlog';
+import { Pagination } from '../../components/elements/pagination';
+import { Main } from '../../templates/Main';
 
 const Blog = () => (
   <Main>
@@ -23,7 +25,11 @@ const Blog = () => (
 
     <div className="container m-auto grid sm:grid-cols-1 xl:grid-cols-3 pt-6 gap-8 mt-7 p-3">
       {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((item) => (
-        <CardBlog key={item} />
+        <Link key={item} href="/blog/test">
+          <a href="/blog/test" className="text-current">
+            <CardBlog />
+          </a>
+        </Link>
       ))}
     </div>
 

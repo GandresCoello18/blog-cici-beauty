@@ -1,7 +1,7 @@
 import React from 'react';
 
 export const AddComment = () => (
-  <form className="w-full max-w-xl bg-pink-100 rounded-lg px-4 p-2">
+  <form className="w-full bg-pink-100 rounded-lg px-4 p-2">
     <div className="flex flex-wrap -mx-3 mb-6">
       <h2 className="px-4 pt-3 pb-2 text-gray-800 text-lg">Añadir comentario</h2>
       <div className="w-full md:w-full px-3 mb-2 mt-2">

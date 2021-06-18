@@ -2,7 +2,7 @@
 import React from 'react';
 
 export const CommnetVideo = () => (
-  <div className="max-w-lg w-full rounded-lg shadow-lg p-4">
+  <div className="w-full rounded-lg shadow-lg p-4">
     <div className="flex">
       <img
         alt="Placeholder"
