@@ -19,34 +19,46 @@ export function Footer() {
             <div className="md:flex items-center mt-5 md:mt-10 text-base text-color f-f-l">
               <h2 className=" md:mr-6 pb-4 md:py-0 cursor-pointer">
                 <Link href="https://cici.beauty">
-                  <a target="_blank">Tienda</a>
+                  <a href="https://cici.beauty" target="_blank" rel="noreferrer">
+                    Tienda
+                  </a>
                 </Link>
               </h2>
               <h2 className="cursor-pointer">
                 <Link href="https://cici.beauty/login">
-                  <a target="_blank">Iniciar sesion</a>
+                  <a href="https://cici.beauty/login" target="_blank" rel="noreferrer">
+                    Iniciar sesion
+                  </a>
                 </Link>
               </h2>
             </div>
             <div className="my-6 text-base text-color f-f-l">
               <ul className="md:flex items-center">
                 <li className=" md:mr-6 cursor-pointer pt-4 lg:py-0">
-                  <Link href="/">Sobre Nosotros</Link>
+                  <Link href="https://cici.beauty/about">
+                    <a href="https://cici.beauty/about" target="_blank" rel="noreferrer">
+                      Sobre Nosotros
+                    </a>
+                  </Link>
                 </li>
                 <li className=" md:mr-6 cursor-pointer pt-4 lg:py-0">
-                  <Link href="/">Talleres</Link>
+                  <Link href="/talleres">Talleres</Link>
                 </li>
                 <li className=" md:mr-6 cursor-pointer pt-4 lg:py-0">
-                  <Link href="/">Cursos</Link>
+                  <Link href="/cursos">Cursos</Link>
                 </li>
                 <li className=" md:mr-6 cursor-pointer pt-4 lg:py-0">
-                  <Link href="/">Blog</Link>
+                  <Link href="/blog">Blog</Link>
                 </li>
                 <li className=" md:mr-6 cursor-pointer pt-4 lg:py-0">
-                  <Link href="/">Ayuda</Link>
+                  <Link href="mailto:team@cici.beauty">Ayuda</Link>
                 </li>
                 <li className="cursor-pointer pt-4 lg:py-0">
-                  <Link href="/">Politicas de privacidad</Link>
+                  <Link href="https://cici.beauty/privacidad">
+                    <a href="https://cici.beauty/privacidad" target="_blank" rel="noreferrer">
+                      Politicas de privacidad
+                    </a>
+                  </Link>
                 </li>
               </ul>
             </div>

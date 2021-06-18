@@ -33,7 +33,11 @@ const Index = () => (
 
     <div className="container m-auto grid sm:grid-cols-1 xl:grid-cols-3 pt-6 gap-8 mt-7 p-3">
       {[1, 2, 3].map((item) => (
-        <CardBlog key={item} />
+        <Link href="/blog/test">
+          <a href="/blog/test" className="text-gray-700">
+            <CardBlog key={item} />
+          </a>
+        </Link>
       ))}
     </div>
     <div className="container text-center md:text-right">
