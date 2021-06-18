@@ -1,10 +1,22 @@
+/* eslint-disable max-len */
 import React from 'react';
 
 import Link from 'next/link';
+import Carousel from 'react-multi-carousel';
 
 import { CardBlog } from '../components/card/CardBlog';
 import { CardVideo } from '../components/card/CardVideo';
+import { Recomendacion } from '../components/elements/recomendacion';
+import { responsiveCarousel } from '../helpers/responsiveCarousel';
 import { Main } from '../templates/Main';
+
+const fixResponsive = {
+  ...responsiveCarousel,
+  desktop: {
+    breakpoint: { max: 3000, min: 924 },
+    items: 1,
+  },
+};
 
 const Index = () => (
   <Main>
@@ -90,8 +102,10 @@ const Index = () => (
       </div>
     </div>
 
-    <div className="w-full m-auto bg-cici-100 grid grid-cols-1 md:grid-cols-2 pt-6 gap-8 mt-7 p-4">
-      f
+    <div className="container m-auto p-4 bg-cici-100">
+      <Carousel autoPlay responsive={fixResponsive} infinite autoPlaySpeed={2500}>
+        <Recomendacion />
+      </Carousel>
     </div>
   </Main>
 );
